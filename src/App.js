@@ -1,16 +1,16 @@
 // @flow
 
 import React from 'react';
-import type {Node} from 'react';
-import {View, StyleSheet, SafeAreaView} from 'react-native';
+import type { Node } from 'react';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
 
-import ColorBox from './components/ColorBox';
+import Home from './components/Home';
 
 const App = (): Node => {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
-        <ColorBox name="Pink" color="#ffc0cb" />
+        <Home color="#87ceeb" />
       </View>
     </SafeAreaView>
   );
@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    padding: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
